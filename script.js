@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch weather data
     function fetchWeather(city) {
         const apiKey = 'fdd0691505ed48ba8f572521250705';
-        const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+        const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
         fetch(url)
             .then(response => {
