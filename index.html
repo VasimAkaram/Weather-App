@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Search city..." class="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="main-info">
+            <div class="location">
+                <h1 class="city">London</h1>
+                <p class="date">Thursday, May 9 2024 | 10:30 AM</p>
+            </div>
+            
+            <div class="weather-icon">
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather">
+            </div>
+            
+            <div class="temp-container">
+                <div class="temp">24°</div>
+                <div class="unit-toggle">
+                    <span class="unit active">C</span>
+                    <span class="unit">F</span>
+                </div>
+            </div>
+            
+            <div class="description">Partly cloudy</div>
+        </div>
+        
+        <div class="details">
+            <div class="detail">
+                <i class="fas fa-temperature-high"></i>
+                <div>
+                    <span>Feels Like</span>
+                    <p class="feels-like">26°</p>
+                </div>
+            </div>
+            <div class="detail">
+                <i class="fas fa-tint"></i>
+                <div>
+                    <span>Humidity</span>
+                    <p class="humidity">65%</p>
+                </div>
+            </div>
+            <div class="detail">
+                <i class="fas fa-wind"></i>
+                <div>
+                    <span>Wind</span>
+                    <p class="wind">12 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
